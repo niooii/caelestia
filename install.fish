@@ -186,6 +186,12 @@ if confirm-overwrite $config/btop
     ln -s (realpath btop) $config/btop
 end
 
+# Zellij
+if confirm-overwrite $config/zellij
+    log 'Installing zellij config...'
+    ln -s (realpath zellij) $config/zellij
+end
+
 # Install spicetify
 if set -q _flag_spotify
     log 'Installing spotify (spicetify)...'
