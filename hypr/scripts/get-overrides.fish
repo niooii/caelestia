@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/bin/fish
 
 set -l src (dirname (status filename))
 set -q XDG_CONFIG_HOME && set -l config $XDG_CONFIG_HOME/caelestia || set -l config $HOME/.config/caelestia
