@@ -85,6 +85,10 @@ echo '│   / /___/ /_/ /  __/ /  __(__  ) /_/ / /_/ /    │'
 echo '│   \____/\__,_/\___/_/\___/____/\__/_/\__,_/     │'
 echo '│                                                 │'
 echo '╰─────────────────────────────────────────────────╯'
+echo 'not official distribution..\n'
+echo 'Updating submodules..'
+git submodule init
+git submodule update
 set_color normal
 log 'Welcome to the Caelestia dotfiles installer!'
 log 'Before continuing, please ensure you have made a backup of your config directory.'
@@ -196,6 +200,12 @@ end
 if confirm-overwrite $config/kitty
     log 'Installing kitty config...'
     ln -s (realpath kitty) $config/kitty
+end
+
+# Neovim
+if confirm-overwrite $config/nvim
+    log 'Installing nvim config...'
+    ln -s (realpath nvim) $config/nvim
 end
 
 # Install spicetify
