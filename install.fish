@@ -192,6 +192,12 @@ if confirm-overwrite $config/zellij
     ln -s (realpath zellij) $config/zellij
 end
 
+# Kitty
+if confirm-overwrite $config/kitty
+    log 'Installing kitty config...'
+    ln -s (realpath kitty) $config/kitty
+end
+
 # Install spicetify
 if set -q _flag_spotify
     log 'Installing spotify (spicetify)...'
