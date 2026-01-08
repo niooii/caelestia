@@ -1,5 +1,4 @@
-/hypr/hyprland/overrides.conf
-# /hypr/scheme/current.conf
+/hypr/scheme/current.conf
 
 /spicetify/config-xpui.ini
 /spicetify/Themes/caelestia/color.ini
@@ -8,3 +7,5 @@
 /btop/themes/
 
 /fish/fish_variables
+
+.SRCINFO
